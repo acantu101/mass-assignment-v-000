@@ -1,8 +1,8 @@
 class Person
 
-  def initialize(attributes)
-    attributes.each do {|key, value| self.send (("#{key}="), value)}
-    end
-  end
-
-end
+  attr_accessor :name, :user_name, :age, :location, :bio
+  
+   def initialize(attributes)
+     attributes.each {|key, value| self.send(("#{key}="), value)}
+   end
+ end
